@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Registro de formulário</title>
+</head>
+
+<body>
+    <h1>Registro de formulário</h1>
+    <p>Por favor, preencha este formulário com as informações necessárias</p>
+    <form action="https://register-demo.freecodecamp.org" method="get">
+        <fieldset>
+            <label for="first-name">Insira seu primeiro nome: <input id="first-name" name="nomes" type="text" required /></label>
+            <label for="last-name">Insira seu sobrenome: <input id="last-name" name="sobrenomes" type="text" required /></label>
+            <label for="email">Insira seu Email: <input id="email" name="emails" type="email" required /></label>
+            <label for="new-password">Cria uma nova senha: <input id="new-password" name="senhas" type="password" required minlength="8"></input></label>
+        </fieldset>
+        <fieldset>
+            <label for="conta-pf"><input class="nalinha" id="conta-pf" type="radio" name="tipos-de-conta" /> Conta Pessoa Física</label>
+            <label for="juridica"><input class="nalinha" id="juridica" type="radio" name="tipos-de-conta" /> Conta Pessoa Jurídica</label>
+            <label for="termos-condicoes"><input class="nalinha" id="termos-condicoes" name="termos-de-uso" type="checkbox" required /> Eu Aceito os <a href="https://www.freecodecamp.org/news/terms-of-service/">termos e condições</a></label>
+        </fieldset>
+        <fieldset >
+            <label for="foto">Faça o upload de uma foto de perfil <input type="file" name="foto" id="fotos-perfil"> </label>
+            <label for="idade">Insira a sua idade: <input  type="number" min="12" max="120" name="idades" id="idade"></label>
+            <label for="referencia">Como você ficou sabendo sobre nós? <select name="referencia" id="referencia">
+                <option value="">Selecione um</option>
+                <option value="1">Anúncios</option>
+                <option value="2">Youtube</option>
+                <option value="3">Instagram</option>
+                <option value="4">outros</option>
+            </select></label>
+            <label for="bio">Insira sua bio: <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Eu sou um estudante de programação..."></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
